@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Response Page</title>
+</head>
+<body> <center>
+<p><h1 style="color:orange">Here are your Classified Entities</h1></p>
+<p>
+      <table border = 1 solid orange;>
+         
+            <tr style="color:green">
+               <th> person </th>
+              {% for value in personresult %}   
+               <td> {{ value }} </td>
+               {% endfor %}
+            </tr>
+            <tr style="color:green">
+               <th> Location </th>
+              {% for value in locationresult %}
+               
+               <td> {{ value }} </td>
+               {% endfor %}
+            </tr>
+            <tr style="color:green">
+               <th> Organization </th>
+              {% for value in organizationresult %}
+               
+               <td> {{ value }} </td>
+               {% endfor %}
+            </tr>
+            <tr style="color:green">
+               <th> Miscellaneous </th>
+              {% for value in miscresult %}
+               
+               <td> {{ value }} </td>
+               {% endfor %}
+            </tr>
+            
+         
+      </table> 
+      </p>
+      <p><h1 style="color:orange"> Frequency Of Entities </h1> </p>
+      <p>
+      <table border = 1 solid orange;>
+      
+            <tr style="color:green"> 
+              {% for key, value in frequency.items()  %}           
+               <th> {{ key }} </th>
+                {% endfor %}
+            </tr>
+            
+            <tr style="color:green"> 
+            {% for key, value in frequency.items()  %}           
+            <th> {{ value }} </th>
+             {% endfor %}
+            </tr>
+            
+            
+            
+         
+      </table> 
+      </p>
+      <p>
+      <form action="http://127.0.0.1:5000/" method="get">
+   		 <input type="submit" value="BACK" style="background:orange; cursor:pointer; color:green">
+	</form>  </p>
+   </body>
+   <center>
+</html>

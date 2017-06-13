@@ -1,0 +1,45 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GraphGame",
+		"_postman_id": "9cb6a60d-a24c-b2cf-99ab-00702782a367",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Restlet Graph Game | Get Color Map",
+			"request": {
+				"url": "http://ec2-52-87-216-222.compute-1.amazonaws.com:9080/graphgame",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Restlet GraphGame | Insert entry",
+			"request": {
+				"url": "http://ec2-52-87-216-222.compute-1.amazonaws.com:9080/graphgame",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"action\": \"resetAll\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

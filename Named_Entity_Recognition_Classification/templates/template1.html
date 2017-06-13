@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Entry Page</title>
+
+
+</head>
+<body>
+
+
+<div id="content">
+<center>
+<p>
+<h1 style="color:orange;">Entity Classifier</h1></p>
+<form enctype="multipart/form-data" action="process" method="post" name="form" style="color:green;">
+  <p>
+  <label for="username">Please enter your text: </label>
+  </p>
+  <p>
+  <textarea name="textarea" style="width:250px;height:150px;"></textarea>
+  </p>
+  <p>
+  OR
+  </p>
+  <p>
+  Select a .txt file from your computer to upload: <br>
+  <input type="file" name="datafile" size="40" accept="text/plain" >
+  </p>
+  <input type="submit" value="SEND" id="show" name="show" onclick="show_image()" style="background:orange; cursor:pointer; color:green">
+
+</form>
+</div>
+<div id="image_holder" style="display:none">
+    <img src="static/hourglass.gif" name="gif" alt = "whatever" style="display: block; margin: 0 auto; width: 100px; ">
+</div>
+<script type="text/javascript">
+function show_image()
+{
+    document.getElementById("image_holder").style.display="block";  
+    document.getElementById("content").style.display="none";  
+    
+}
+</script>
+</body>
+
+</center>
+</html>

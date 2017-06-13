@@ -1,0 +1,11 @@
+vertex coloring
+Alice and Bob color the vertices of a graph G with a set k of colors.
+Alice and Bob take turns, coloring properly an uncolored vertex (in the standard version, Alice begins).
+If a vertex v is impossible to color properly (for any color, v has a neighbor colored with it), then Bob wins.
+If the graph is completely colored, then Alice wins.
+
+edge coloring
+Alice and Bob are coloring the edges a graph G with a set k of colors.
+Alice and Bob are taking turns, coloring properly a uncolored edge (in the standard version, Alice begins).
+If an edge e is impossible to color properly (for any color, e is adjacent to an edge colored with it), then Bob wins.
+If the graph is completely edge-colored, then Alice wins.

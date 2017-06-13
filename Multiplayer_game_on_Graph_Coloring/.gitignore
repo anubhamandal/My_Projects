@@ -1,0 +1,11 @@
+*.class
+**/*.class
+*.ctxt
+**/*.ctxt
+.DS_Store
+dist/app.jar
+!com/**
+!org/**
+MainMenu.jar
+*.bak
+
